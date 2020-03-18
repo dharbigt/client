@@ -1,12 +1,12 @@
-import * as React from 'react'
-import * as Container from '../../util/container'
-import * as WalletsGen from '../../actions/wallets-gen'
-import * as RouteTreeGen from '../../actions/route-tree-gen'
-import * as Constants from '../../constants/wallets'
-import * as Types from '../../constants/types/wallets'
-import Onboarding from '../onboarding/container'
 import partition from 'lodash/partition'
-import Wallet, {Props, AssetSectionTitle} from '.'
+import * as React from 'react'
+import Wallet, {AssetSectionTitle, Props} from '.'
+import * as RouteTreeGen from '../../actions/route-tree-gen'
+import * as WalletsGen from '../../actions/wallets-gen'
+import * as Types from '../../constants/types/wallets'
+import * as Constants from '../../constants/wallets'
+import * as Container from '../../util/container'
+import Onboarding from '../onboarding/container'
 
 type OwnProps = {}
 
