@@ -1,13 +1,13 @@
-import * as React from 'react'
 import People, {Header} from '.'
-import * as PeopleGen from '../actions/people-gen'
-import {createShowUserProfile} from '../actions/profile-gen'
-import * as RouteTreeGen from '../actions/route-tree-gen'
-import * as Kb from '../common-adapters'
 import * as Constants from '../constants/people'
+import * as Container from '../util/container'
+import * as Kb from '../common-adapters'
+import * as PeopleGen from '../actions/people-gen'
+import * as React from 'react'
+import * as RouteTreeGen from '../actions/route-tree-gen'
 import * as Types from '../constants/types/people'
 import * as WaitingConstants from '../constants/waiting'
-import * as Container from '../util/container'
+import {createShowUserProfile} from '../actions/profile-gen'
 
 type OwnProps = {}
 

@@ -1,6 +1,6 @@
 import * as Container from '../util/container'
-import * as Tabs from './tabs'
 import * as RPCTypes from './types/rpc-gen'
+import * as Tabs from './tabs'
 
 export const badgeStateToBadgeCounts = (state: Container.TypedState, bs: RPCTypes.BadgeState) => {
   const {inboxVers, unverifiedEmails, unverifiedPhones} = bs

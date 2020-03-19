@@ -1,8 +1,8 @@
-import * as React from 'react'
-import * as Kb from '../../common-adapters'
-import {WotStatusType} from '../../constants/types/rpc-gen'
-import * as Styles from '../../styles'
 import PeopleItem, {TaskButton} from '../item'
+import * as Kb from '../../common-adapters'
+import * as React from 'react'
+import * as Styles from '../../styles'
+import {WotStatusType} from '../../constants/types/rpc-gen'
 
 type Props = {
   userForIcon: string

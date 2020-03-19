@@ -1,8 +1,8 @@
-import * as React from 'react'
 import WotTask from '.'
-import {WotStatusType} from '../../constants/types/rpc-gen'
+import * as React from 'react'
 import * as Sb from '../../stories/storybook'
 import {action} from '../../stories/storybook'
+import {WotStatusType} from '../../constants/types/rpc-gen'
 
 const baseProps = {
   badged: true,

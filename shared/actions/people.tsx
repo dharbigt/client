@@ -1,16 +1,16 @@
-import * as Constants from '../constants/people'
-import * as Types from '../constants/types/people'
-import * as RPCTypes from '../constants/types/rpc-gen'
+import commonTeamBuildingSaga, {filterForNs} from './team-building'
 import logger from '../logger'
+import * as Constants from '../constants/people'
 import * as Container from '../util/container'
-import {RPCError} from '../util/errors'
-import * as Saga from '../util/saga'
 import * as EngineGen from './engine-gen-gen'
 import * as NotificationsGen from './notifications-gen'
 import * as PeopleGen from './people-gen'
 import * as ProfileGen from './profile-gen'
-import commonTeamBuildingSaga, {filterForNs} from './team-building'
+import * as RPCTypes from '../constants/types/rpc-gen'
+import * as Saga from '../util/saga'
 import * as TeamBuildingGen from './team-building-gen'
+import * as Types from '../constants/types/people'
+import {RPCError} from '../util/errors'
 
 // set this to true to have all todo items + a contact joined notification show up all the time
 const debugTodo = false

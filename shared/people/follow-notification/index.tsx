@@ -1,9 +1,9 @@
 import * as React from 'react'
-import * as Kb from '../../common-adapters'
-import * as Types from '../../constants/types/people'
-import {FollowButton} from '../../settings/contacts-joined/buttons'
-import * as Styles from '../../styles'
 import PeopleItem from '../item'
+import * as Types from '../../constants/types/people'
+import * as Kb from '../../common-adapters'
+import * as Styles from '../../styles'
+import {FollowButton} from '../../settings/contacts-joined/buttons'
 
 const connectedUsernamesProps = {
   colorFollowing: true,

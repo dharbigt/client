@@ -1,7 +1,8 @@
 import * as React from 'react'
+import PeopleItem from '../item'
 import * as Kb from '../../common-adapters'
 import * as Styles from '../../styles'
-import PeopleItem, {TaskButton} from '../item'
+import {TaskButton} from '../item'
 
 export type Props = {
   badged: boolean

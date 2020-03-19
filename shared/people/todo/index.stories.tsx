@@ -1,6 +1,6 @@
 import * as React from 'react'
+import {storiesOf, action} from '../../stories/storybook'
 import {Task} from '.'
-import {action, storiesOf} from '../../stories/storybook'
 import {TaskButton} from '../item'
 
 const defaultButtons = (label, dismissLabel?) => {

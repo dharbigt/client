@@ -1,6 +1,6 @@
-import {IconType} from '../../common-adapters/icon.constants-gen'
 import * as RPCTypes from './rpc-gen'
 import * as TeamBuildingTypes from './team-building'
+import {IconType} from '../../common-adapters/icon.constants-gen'
 
 export type ItemTypeEnum = RPCTypes.HomeScreenItemType
 export type ItemType = keyof typeof RPCTypes.HomeScreenItemType
