@@ -5,10 +5,9 @@ package keybase1
 
 import (
 	"fmt"
-	"time"
-
 	"github.com/keybase/go-framed-msgpack-rpc/rpc"
 	context "golang.org/x/net/context"
+	"time"
 )
 
 type WotStatusType int
@@ -181,7 +180,7 @@ type WotReactArg struct {
 
 type WotReactCLIArg struct {
 	SessionID int             `codec:"sessionID" json:"sessionID"`
-	Voucher   string          `codec:"username" json:"username"`
+	Voucher   string          `codec:"voucher" json:"voucher"`
 	Reaction  WotReactionType `codec:"reaction" json:"reaction"`
 }
 

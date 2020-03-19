@@ -206,7 +206,7 @@
           "type": "int"
         },
         {
-          "name": "username",
+          "name": "voucher",
           "type": "string"
         },
         {
@@ -223,7 +223,14 @@
           "type": "int"
         },
         {
-          "name": "username",
+          "name": "vouchee",
+          "type": [
+            null,
+            "string"
+          ]
+        },
+        {
+          "name": "voucher",
           "type": [
             null,
             "string"
