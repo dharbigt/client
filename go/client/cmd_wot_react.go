@@ -11,7 +11,7 @@ import (
 )
 
 type cmdWotAccept struct {
-	username string
+	voucher string
 	libkb.Contextified
 }
 
@@ -35,13 +35,13 @@ func (c *cmdWotAccept) ParseArgv(ctx *cli.Context) error {
 	if len(ctx.Args()) != 1 {
 		return errors.New("accept requires a username")
 	}
-	c.username = ctx.Args()[0]
+	c.voucher = ctx.Args()[0]
 	return nil
 }
 
 func (c *cmdWotAccept) Run() error {
 	arg := keybase1.WotReactCLIArg{
-		Username: c.username,
+		Voucher:  c.voucher,
 		Reaction: keybase1.WotReactionType_ACCEPT,
 	}
 
@@ -63,7 +63,7 @@ func (c *cmdWotAccept) GetUsage() libkb.Usage {
 /////////////////////////////////////////
 
 type cmdWotReject struct {
-	username string
+	voucher string
 	libkb.Contextified
 }
 
@@ -88,13 +88,13 @@ func (c *cmdWotReject) ParseArgv(ctx *cli.Context) error {
 	if len(ctx.Args()) != 1 {
 		return errors.New("reject requires a username")
 	}
-	c.username = ctx.Args()[0]
+	c.voucher = ctx.Args()[0]
 	return nil
 }
 
 func (c *cmdWotReject) Run() error {
 	arg := keybase1.WotReactCLIArg{
-		Username: c.username,
+		Voucher:  c.voucher,
 		Reaction: keybase1.WotReactionType_REJECT,
 	}
 
